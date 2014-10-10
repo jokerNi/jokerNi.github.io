@@ -4,7 +4,7 @@
   <subtitle><![CDATA[stay hungry stay foolish]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://yoursite.com/"/>
-  <updated>2014-10-08T17:03:27.666Z</updated>
+  <updated>2014-10-10T13:35:01.185Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -13,6 +13,43 @@
   </author>
   
   <generator uri="http://zespia.tw/hexo/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[ubuntu12.04编译android源码遇到的问题]]></title>
+    <link href="http://yoursite.com/2014/10/10/ubuntu12-04%E7%BC%96%E8%AF%91android%E6%BA%90%E7%A0%81%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/"/>
+    <id>http://yoursite.com/2014/10/10/ubuntu12-04编译android源码遇到的问题/</id>
+    <published>2014-10-10T12:48:20.000Z</published>
+    <updated>2014-10-10T13:33:42.000Z</updated>
+    <content type="html"><![CDATA[<p>最近需要修改android源码来实现一些需求，所以需要下载和编译android源代码，下载就不用说了，天朝V5,我等屁民只能用vpn代理翻墙去google下载了，下载就不用说了，网上资料很多，今天要记录是的下载好的完整源码移植到其他的电脑上的时候，编译时候出现了问题。其实，主要是权限和jdk安装的问题。  </p>
+<blockquote>
+<ul>
+<li>JDK安装的问题<br>将完整的源码用移动存储器转移到另外的一台电脑上的ubuntu系统上的时候，在初始化环境后  </li>
+</ul>
+</blockquote>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">. /build/envsetup.sh</div></pre></td></tr></table></figure>
+
+
+
+<p>提示找不到jdk相关的文件。  </p>
+<p>解决办法： 删除原有的java文件，重新安装，ubuntu下安装sun公司的java环境很简单，网上资料很多，可以参考下面的链接地址的方法来配置<br><a href="http://blog.csdn.net/gobitan/article/details/24322561" target="_blank" rel="external">http://blog.csdn.net/gobitan/article/details/24322561</a>  </p>
+<blockquote>
+<ul>
+<li>权限问题<br>编译失败提示  </li>
+</ul>
+</blockquote>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">/bin/bash: perbuilt/linux-x86/toolchain/arm-eabi-<span class="number">4.4</span><span class="number">.0</span>/bin/arm-eabi-gcc: Permission denied</div></pre></td></tr></table></figure>
+
+
+<p>解决办法： chmod 777 * -R 权限被拒绝的文件的路径  </p>
+<p>待续。。。</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>最近需要修改android源码来实现一些需求，所以需要下载和编译android源代码，下载就不用说了，天朝V5,我等屁民只能用vpn代理翻墙去google下载了，下载就不用说了，网上资料很多，今天要记录是的下载好的完整源码移植到其他的电脑上的时候，编译时候出现了问题。其实，]]>
+    </summary>
+    
+      <category term="Android" scheme="http://yoursite.com/categories/Android/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[如此颓废]]></title>
